@@ -1,0 +1,195 @@
+export default function BrooksvilleDemoBusinessWebsite() { return ( <div className="min-h-screen bg-white text-slate-900"> <header className="border-b border-slate-200 bg-white/95 backdrop-blur sticky top-0 z-50"> <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"> <div> <div className="text-2xl font-bold tracking-tight">Nature Coast Home Services</div> <div className="text-sm text-slate-600">Serving Brooksville, Spring Hill & Hernando County</div> </div> <a
+href="#contact"
+className="rounded-2xl bg-slate-900 text-white px-5 py-3 text-sm font-semibold shadow-sm hover:opacity-90 transition"
+> Get a Free Quote </a> </div> </header>
+
+<section className="max-w-6xl mx-auto px-4 py-20">
+    <div className="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <div className="inline-flex items-center rounded-full border border-slate-200 px-3 py-1 text-sm text-slate-700 mb-5">
+          Trusted Local Service in Brooksville, FL
+        </div>
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight">
+          Reliable Home Services Without the Runaround
+        </h1>
+        <p className="mt-6 text-lg text-slate-600 leading-8 max-w-xl">
+          Fast scheduling, honest pricing, and dependable service for homeowners across Brooksville and the surrounding area. We keep things simple, show up when we say we will, and get the job done right.
+        </p>
+        <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <a
+            href="tel:3525550148"
+            className="rounded-2xl bg-slate-900 text-white px-6 py-4 font-semibold text-center shadow-sm hover:opacity-90 transition"
+          >
+            Call (352) 555-0148
+          </a>
+          <a
+            href="#services"
+            className="rounded-2xl border border-slate-300 px-6 py-4 font-semibold text-center hover:bg-slate-50 transition"
+          >
+            View Services
+          </a>
+        </div>
+        <div className="mt-8 grid grid-cols-3 gap-4 text-sm text-slate-600">
+          <div className="rounded-2xl bg-slate-50 p-4">
+            <div className="text-2xl font-bold text-slate-900">Same Day</div>
+            <div>Appointments Available</div>
+          </div>
+          <div className="rounded-2xl bg-slate-50 p-4">
+            <div className="text-2xl font-bold text-slate-900">5-Star</div>
+            <div>Customer Focused</div>
+          </div>
+          <div className="rounded-2xl bg-slate-50 p-4">
+            <div className="text-2xl font-bold text-slate-900">Local</div>
+            <div>Brooksville Based</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-6 shadow-sm">
+          <div className="rounded-[1.5rem] bg-white p-6 shadow-sm border border-slate-200">
+            <div className="text-sm font-semibold text-slate-500 uppercase tracking-[0.2em]">Why homeowners call us</div>
+            <ul className="mt-6 space-y-4 text-slate-700">
+              <li className="rounded-2xl bg-slate-50 p-4">✔ Easy scheduling by phone or text</li>
+              <li className="rounded-2xl bg-slate-50 p-4">✔ Clear communication before arrival</li>
+              <li className="rounded-2xl bg-slate-50 p-4">✔ Honest recommendations with no pressure</li>
+              <li className="rounded-2xl bg-slate-50 p-4">✔ Professional service from a local team</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" className="bg-slate-50 border-y border-slate-200">
+    <div className="max-w-6xl mx-auto px-4 py-20">
+      <div className="max-w-2xl mb-12">
+        <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Services</div>
+        <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">Simple, professional help for your home</h2>
+        <p className="mt-4 text-slate-600 text-lg">
+          This demo is built to work for a variety of local service businesses like HVAC, pressure washing, handyman work, landscaping, or maintenance companies.
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-6">
+        {[
+          {
+            title: 'Repairs & Maintenance',
+            text: 'Dependable service to keep your home or equipment running the way it should.'
+          },
+          {
+            title: 'Inspections & Estimates',
+            text: 'Clear recommendations and straightforward pricing before work begins.'
+          },
+          {
+            title: 'Recurring Service Plans',
+            text: 'Stay ahead of issues with regular maintenance and priority scheduling.'
+          }
+        ].map((service) => (
+          <div key={service.title} className="rounded-[1.75rem] bg-white border border-slate-200 p-6 shadow-sm">
+            <h3 className="text-xl font-semibold">{service.title}</h3>
+            <p className="mt-3 text-slate-600 leading-7">{service.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section className="max-w-6xl mx-auto px-4 py-20">
+    <div className="grid md:grid-cols-2 gap-8">
+      <div className="rounded-[2rem] bg-slate-900 text-white p-8 shadow-sm">
+        <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-300">About Us</div>
+        <h2 className="mt-3 text-3xl font-bold tracking-tight">A local business people feel good about hiring</h2>
+        <p className="mt-5 text-slate-300 leading-8">
+          We believe people want more than just a service provider. They want someone dependable, respectful, and easy to work with. That is why we focus on communication, clean work, and doing what we say we will do.
+        </p>
+      </div>
+
+      <div className="rounded-[2rem] border border-slate-200 p-8 shadow-sm">
+        <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">What customers notice</div>
+        <div className="mt-6 space-y-5 text-slate-700">
+          <div>
+            <div className="font-semibold text-slate-900">Fast Response</div>
+            <div className="mt-1 text-slate-600">Calls and messages returned quickly so customers are not left guessing.</div>
+          </div>
+          <div>
+            <div className="font-semibold text-slate-900">Professional Experience</div>
+            <div className="mt-1 text-slate-600">A clean, modern website builds trust before the first phone call ever happens.</div>
+          </div>
+          <div>
+            <div className="font-semibold text-slate-900">Built to Convert</div>
+            <div className="mt-1 text-slate-600">Strong call-to-action buttons, simple service info, and a contact section that makes it easy to reach out.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section className="bg-slate-50 border-y border-slate-200">
+    <div className="max-w-6xl mx-auto px-4 py-20">
+      <div className="text-center max-w-2xl mx-auto">
+        <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Reviews</div>
+        <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">Built to look trustworthy from the first glance</h2>
+      </div>
+
+      <div className="mt-12 grid md:grid-cols-3 gap-6">
+        {[
+          'Very professional and easy to work with. Showed up on time and kept us updated the whole way through.',
+          'You can tell they care about doing a good job. Straightforward, honest, and no hassle.',
+          'This is the kind of local company you want to hire. Great communication and solid work.'
+        ].map((review, index) => (
+          <div key={index} className="rounded-[1.75rem] bg-white border border-slate-200 p-6 shadow-sm">
+            <div className="text-lg">★★★★★</div>
+            <p className="mt-4 text-slate-600 leading-7">“{review}”</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" className="max-w-6xl mx-auto px-4 py-20">
+    <div className="rounded-[2rem] bg-slate-900 text-white p-8 md:p-12 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <div className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-300">Contact</div>
+        <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">Need help? Let’s talk.</h2>
+        <p className="mt-4 text-slate-300 leading-8 max-w-xl">
+          This section is exactly the kind of thing that helps local businesses convert visitors into calls. Keep it direct, simple, and easy to act on.
+        </p>
+      </div>
+
+      <div className="rounded-[1.5rem] bg-white text-slate-900 p-6">
+        <div className="space-y-4">
+          <div>
+            <div className="text-sm text-slate-500">Phone</div>
+            <div className="text-lg font-semibold">(352) 555-0148</div>
+          </div>
+          <div>
+            <div className="text-sm text-slate-500">Email</div>
+            <div className="text-lg font-semibold">hello@naturecoasthomeservices.com</div>
+          </div>
+          <div>
+            <div className="text-sm text-slate-500">Service Area</div>
+            <div className="text-lg font-semibold">Brooksville, Spring Hill, Weeki Wachee & Hernando County</div>
+          </div>
+        </div>
+        <div className="mt-6 flex flex-col sm:flex-row gap-3">
+          <a href="tel:3525550148" className="rounded-2xl bg-slate-900 text-white px-5 py-3 text-center font-semibold hover:opacity-90 transition">
+            Call Now
+          </a>
+          <a href="mailto:hello@naturecoasthomeservices.com" className="rounded-2xl border border-slate-300 px-5 py-3 text-center font-semibold hover:bg-slate-50 transition">
+            Email Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer className="border-t border-slate-200">
+    <div className="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-500 flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
+      <div>© 2026 Nature Coast Home Services</div>
+      <div>Demo website for local service businesses in Brooksville, Florida</div>
+    </div>
+  </footer>
+</div>
+
+); }
